@@ -1,0 +1,104 @@
+*, *:before, *:after{
+	-webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{
+	
+}
+body{
+	background: #000;
+	font-family: 'Arvo', serif;	
+	font-size: 0.875rem;
+	line-height: 0.8125rem;
+	color:#fff;
+}
+a{
+  text-decoration: none;
+  color: inherit; /*наследует значение от родителя*/  
+}
+.menu-link{
+  opacity: .5;
+  transition: all .5s;
+}
+.menu-link:hover{
+	opacity: 1;
+}
+.header{
+    width: 100vw;	
+	border-bottom: .0625rem solid #fff;
+}
+.container{
+	max-width: 1960px;
+	margin: 0 auto;
+	padding:0 4.615625rem;
+}
+.header__top{
+	display:flex;
+	justify-content: space-between;
+	height: 6.6875rem;
+	align-items: center;	
+}
+.logo{
+	position: relative;		
+	padding-left: 10.625rem;
+}
+.logotip{
+  position: absolute;
+  top: -.6rem;
+  left: 0;
+}
+.logotext{
+	margin: auto;
+}
+.menu__list,
+.header__list{
+	display: flex;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+}
+.menu__list li + li{  /*все кроме первой li используется*/
+  padding-left: 1.25rem;
+}
+.arrow{
+	color:#E20202;
+	padding-left: 1rem;
+	width: 2.4668rem;	
+}
+.icon{
+	width: 9.98px;
+	height: 10px;
+    fill:#fff;
+    fill-opacity: .6;
+}
+.icon:hover,
+.header-link:hover{
+	fill-opacity: 1;
+	transition: all .5s;
+}
+.header__list li + li{
+	margin-left: 2.06625rem;
+}
+@media screen and (max-width: 779px){
+	.container{
+		width: 100%;
+		padding: 0 1rem;
+	}
+	.logo{
+	   padding-left: 5rem;
+    }
+    .logotip{
+    	top:1.3rem;
+    	width: 5rem;
+    }
+    .logotext{
+    	width: 15rem;
+    }
+}
+@media(min-width: 317px) and (max-width: 779px){
+
+}
+@media screen and (min-width: 1024px){
+	.container{
+	  padding:0 2rem;
+    }
+}
